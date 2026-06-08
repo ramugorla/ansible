@@ -2,7 +2,8 @@
   hosts: local
   connection: local
   vars:
-    COURSE: "Devops with AWS"
+    #COURSE: "Devops with AWS"
+    COURSE: ansible
     DURATION: 120HRS
     TRAINER: Sivakumar
   tasks:
