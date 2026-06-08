@@ -13,4 +13,4 @@
         msg: "Course is {{ COURSE }} duration is {{ DURATION }} and Trainer is {{ TRAINER }}"
     - name: PLAY Variables  # Global Varibles  
       ansible.builtin.debug:
-        msg: "Course is {{ COURSE }} duration is {{ DURATION }} and Trainer is {{ TRAINER }}"
+        msg: "Course is {{ COURSE }} duration is 120HRS and Trainer is {{ TRAINER }}"
