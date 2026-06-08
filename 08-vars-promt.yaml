@@ -1,0 +1,13 @@
+- name: prompt
+  hosts: local
+  connection: local
+  tasks:
+    vars_prompt:
+      - name: Course 
+        prompt: Please enter course name
+      - name: Trainer
+        prompt: Please enter Trainer name
+      - name: duration
+        prompt: please enter hours 
+      - name: providing prompt
+        msg: "Course is {{ COURSE }} duration is {{ DURATION }} and Trainer is {{ TRAINER }}"
