@@ -3,6 +3,7 @@
   connection: local
   vars:
     COURSE: "Devops with AWS"
+    TRAINER: Sivakumar
   tasks:
     - name: TASKS Variables # Loacl Variables which are over write by the global variables
       vars:
