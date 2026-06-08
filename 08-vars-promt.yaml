@@ -2,11 +2,11 @@
   hosts: local
   connection: local
   vars_prompt:
-    - name: Course 
+    - name: COURSE 
       prompt: Please enter course name
-    - name: Trainer
+    - name: TRAINER
       prompt: Please enter Trainer name
-    - name: duration
+    - name: DURATION
       prompt: please enter hours 
   tasks:
     - name: providing prompt
