@@ -10,4 +10,5 @@
       - name: duration
         prompt: please enter hours 
       - name: providing prompt
-        msg: "Course is {{ COURSE }} duration is {{ DURATION }} and Trainer is {{ TRAINER }}"
+        ansible.builtin.debug:
+          msg: "Course is {{ COURSE }} duration is {{ DURATION }} and Trainer is {{ TRAINER }}"
