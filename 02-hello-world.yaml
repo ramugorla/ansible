@@ -1,11 +1,11 @@
-- name: Hello World
+- name: Hello World  # This is PLAY
   hosts: web
   tasks:
     - name: printing Hello world msg
       ansible.builtin.debug:
         msg: MSG from Hello World
 
-- name: H W 
+- name: H W    # This is PLAY
   hosts: local 
   connection: local 
   tasks:
