@@ -1,0 +1,16 @@
+- name: TASKS Variables
+  hosts: local  # No need of SSH credentials
+  connection: local
+  vars:
+    COURSE: "Devops with AWS"
+  tasks:
+    - name: TASKS Variables # Loacl Variables which are over write by the global variables
+      vars:
+        COURSE: ansible
+        DURATION: 10HRS 
+        TRAINER: Ramu
+      ansible.builtin.debug:
+        msg: "Course is {{ COURSE }} duration is {{ DURATION }} and Trainer is {{ TRAINER }}"
+    - name: PLAY Variables  # Global Varibles  
+      ansible.builtin.debug:
+        msg: "Course is {{ COURSE }} duration is {{ DURATION }} and Trainer is {{ TRAINER }}"
