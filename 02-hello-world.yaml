@@ -4,4 +4,11 @@
     - name: printing Hello world msg
       ansible.builtin.debug:
         msg: MSG from Hello World
-        
+
+- name: H W 
+  hosts: local 
+  connection: local 
+  tasks:
+    - name: hello world
+      ansible.builtin.debug:
+        msg: Hello world 
