@@ -1,0 +1,9 @@
+- name: passing argumnets from CMD 
+  hosts: local
+  connection: local 
+  tasks:
+    - name: argumnets
+      ansible.builtin.debug:
+        msg: "Course is {{ COURSE }} Duration is {{ DURATION }} and the Trainer is {{ TRAINER }}"
+
+        
