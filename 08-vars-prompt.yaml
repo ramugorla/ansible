@@ -9,5 +9,6 @@
     - name: TRAINER
       prompt: Please enter trainer name 
   tasks:
-    ansible.builtin.debug:
-      msg: "Course is {{ COURSE }} Duration is {{ DURATION }} and the Trainer is {{ TRAINER }}"
+    - name: variables from prompt
+      ansible.builtin.debug:
+        msg: "Course is {{ COURSE }} Duration is {{ DURATION }} and the Trainer is {{ TRAINER }}"
