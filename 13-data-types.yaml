@@ -3,13 +3,13 @@
   vars:
     COURSE: "Devops With Aws"
     DURATION: 120HRS 
-    topics:
+    topics:  # list data type []
       - AWS
       - Cloud
       - Ansible 
       - shell 
     live: true 
-    tools:
+    tools: # map data type {}
       ci/cd: Jenkins
       cloud: Aws
       git: version 
