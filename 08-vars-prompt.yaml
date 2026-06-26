@@ -1,6 +1,6 @@
 - name: prompt variables
-  hosts: loacl
-  connection: loacl
+  hosts: local
+  connection: local
   vars_prompt:
     - name: COURSE
       prompt: Please enter Course name
