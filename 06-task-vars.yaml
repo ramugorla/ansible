@@ -11,7 +11,7 @@
         COURSE: "ansible"
       ansible.builtin.debug:
         msg: "Course is {{ COURSE }} Duration is {{ DURATION }} and the Trainer is {{ TRAINER }}"
-  tasks:
+        
     - name: print Play Level variables
       ansible.builtin.debug:
         msg: "Course is {{ COURSE }} Duration is {{ DURATION }} and the Trainer is {{ TRAINER }}"
