@@ -5,9 +5,9 @@
     GREET: "PLAY"
   vars_files:
     - Course.yaml
-  vars_prompt:
-    - name: GREET
-      prompt: Please enetr greet value as prompt
+  # vars_prompt:
+  #   - name: GREET
+  #     prompt: Please enetr greet value as prompt
   tasks:
     - name: Task Variables 
       # vars: 
