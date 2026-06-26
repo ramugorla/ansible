@@ -1,0 +1,13 @@
+- name: prompt variables
+  hosts: loacl
+  connection: loacl
+  vars_prompt:
+    - name: COURSE
+      prompt: Please enter Course name
+    - name: DURATION
+      prompt: Please enter time period
+    - name: TRAINER
+      prompt: Please enter trainer name 
+  tasks:
+    ansible.builtin.debug:
+      msg: "Course is {{ COURSE }} Duration is {{ DURATION }} and the Trainer is {{ TRAINER }}"
