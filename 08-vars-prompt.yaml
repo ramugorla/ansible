@@ -15,3 +15,6 @@
     - name: variables from prompt
       ansible.builtin.debug:
         msg: "Course is {{ COURSE }} Duration is {{ DURATION }} and the Trainer is {{ TRAINER }}"
+
+
+
