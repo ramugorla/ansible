@@ -11,9 +11,7 @@
   tasks:
     - name: Task Variables 
       vars: 
-        COURSE: "Ansible"
-        DURATION: 10HRS
-        TRAINER: "Kumar"
+        GREET: "TASK"
       ansible.builtin.debug:
         msg: "Hello from {{ GREET }}"
   
