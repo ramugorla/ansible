@@ -10,8 +10,8 @@
       prompt: Please enetr greet value as prompt
   tasks:
     - name: Task Variables 
-      vars: 
-        GREET: "TASK"
+      # vars: 
+      #   GREET: "TASK"
       ansible.builtin.debug:
         msg: "Hello from {{ GREET }}"
   
