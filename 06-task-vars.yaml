@@ -1,17 +1,17 @@
 - name: print Play and Task variables
   hosts: local
   connection: local
-  vars:
+  vars: # Plays Level variables means global variables accessible to all
     COURSE: "Devops With AWS"
     DURATION: 120HRS
     TRAINER: "Siva Kumar"
   tasks:
     - name: print tasks variables
-      vars:
+      vars:  # Tasks variables means loacl variables accessible with in tasks can be overide by play level variables 
         COURSE: "ansible"
       ansible.builtin.debug:
         msg: "Course is {{ COURSE }} Duration is {{ DURATION }} and the Trainer is {{ TRAINER }}"
-        
+
     - name: print Play Level variables
       ansible.builtin.debug:
         msg: "Course is {{ COURSE }} Duration is {{ DURATION }} and the Trainer is {{ TRAINER }}"
