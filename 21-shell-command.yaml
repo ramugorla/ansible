@@ -10,7 +10,7 @@
 
     - name: run command module
       #ansible.builtin.command: ls -ltr 
-      ansible.builtin.command: ls -ltrrrrrw
+      ansible.builtin.command: lsss -ltrrrrrw
       register: ls_output
 
     - name: 
