@@ -4,3 +4,6 @@
   tasks: 
     - name: run shell module 
       ansible.builtin.shell: ls -ltr > /tmp/output.txt
+
+    - name: run command module
+      ansible.builtin.command: ls -ltr > /tmp/ramu.txt
