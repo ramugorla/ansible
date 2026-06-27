@@ -29,5 +29,15 @@
       ansible.builtin.debug:
         msg: "List is {{ course | items2dict }}"
 
+    - name: print lower case 
+      vars: 
+        name: "SIVAKUMAR"
+        ansible.builtin.debug:
+          msg: "{{ name: lower }}"
+    - name: print upper case 
+      vars: 
+        name: "ramugorla.G"
+        ansible.builtin.debug:
+          msg: "{{ name: upper }}"
 
 
