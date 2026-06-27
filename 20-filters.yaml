@@ -14,9 +14,9 @@
     - name: convert map into list 
       vars:
         course:
-          - { name: ramu }
-          - { surname: gorla }
-          - { age: 27 }
+          name: ramu
+          surname: gorla
+          age: 27
       ansible.builtin.debug:
         msg: "course is: {{ course | dict2items }}"
 
