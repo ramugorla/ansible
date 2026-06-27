@@ -9,9 +9,19 @@
     #   ansible.builtin.command: ls -ltr > /tmp/ramu.txt
 
     - name: run command module
-      ansible.builtin.command: ls -ltr 
+      #ansible.builtin.command: ls -ltr 
+      ansible.builtin.command: ls -ltrrrrrw
       register: ls_output
 
     - name: 
       ansible.builtin.debug:
         msg: "{{ ls_output }}"
+
+    - name: run shell module
+      ansible.builtin.shell: ls -ltr 
+      register: shell_ls
+
+
+    - name: 
+      ansible.builtin.debug:
+        msg: "{{ shell_ls }}"
