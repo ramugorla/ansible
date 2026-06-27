@@ -4,6 +4,5 @@
   tasks:
     - name: define undefined varaible
       ansible.builtin.debug:
-        msg: "Hello {{ Person }}"
+        msg: "Hello {{ Person | default('Ramu')}}"
 
-        
