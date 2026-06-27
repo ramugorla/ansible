@@ -1,0 +1,9 @@
+- name: filters 
+  hosts: local
+  connection: local
+  tasks:
+    - name: define undefined varaible
+      ansible.builtin.debug:
+        msg: "Hello {{ Person }}"
+
+        
