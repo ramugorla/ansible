@@ -10,4 +10,8 @@
 
     - name: run command module
       ansible.builtin.command: ls -ltr 
-      
+      register: ls_output
+
+    - name: 
+      ansible.builtin.debug:
+        msg: "{{ ls_output }}"
