@@ -1,6 +1,7 @@
 - name: filters 
   hosts: local
   connection: local
+  become: yes
   tasks:
     - name: define undefined varaible
       ansible.builtin.debug:
