@@ -6,6 +6,13 @@
       ansible.builtin.debug:
         msg: "Hello {{ Person | default('Ramu')}}"
 
+    - name: install package 
+      ansible.builtin.package:
+        name: "{{ item }}"
+        state: installed
+      loop:
+        - netaddr
+
     - name: convert string into list
       vars: 
         fruits: "Apple, Banana, Mango, Cherry" 
