@@ -8,9 +8,9 @@
         msg: "Hello {{ Person | default('Ramu')}}"
 
     - name: install package 
-      ansible.builtin.package:
+      ansible.builtin.pip:
         name: "{{ item }}"
-        state: installed
+        executable: pip3.9
       loop:
         - netaddr
 
