@@ -32,12 +32,13 @@
     - name: print lower case 
       vars: 
         name: "SIVAKUMAR"
-        ansible.builtin.debug:
-          msg: "{{ name | lower }}"
+      ansible.builtin.debug:
+        msg: "{{ name | lower }}"
+
     - name: print upper case 
       vars: 
         name: "ramugorla.G"
-        ansible.builtin.debug:
-          msg: "{{ name | upper }}"
+      ansible.builtin.debug:
+        msg: "{{ name | upper }}"
 
 
